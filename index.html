@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokyo Bay Malang Academy — Jembatan Indonesia & Jepang</title>
+  <meta name="description" content="Tokyo Bay Malang Academy — Lembaga kursus bahasa Jepang dan jembatan karir ke Jepang di Malang, Jawa Timur." />
+   <link rel="icon" type="image/jpeg" href="assets/images/logo.png" />
+  <link rel="shortcut icon" type="image/jpeg" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <img src="assets/images/logo.png" alt="Tokyo Bay Malang Academy" class="nav-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#profile" class="nav-link">Profile</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Reach Us</a>
+      </nav>
+      <button class="nav-cta" onclick="openWA()">Join Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80"
+        alt="Tokyo Japan"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        
+      </p>
+      <h1 class="hero-title">
+        Buka Pintu<br />
+        <span class="hero-accent">Masa Depanmu</span><br />
+        di Jepang
+      </h1>
+      <p class="hero-sub">
+        Belajar bahasa Jepang bersama native teacher bersertifikat.<br class="hero-br" />
+        Raih karir dan studi impianmu langsung dari Malang.
+      </p>
+      <a href="#courses" class="btn-hero">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Lihat Program Kursus
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SOCIAL PROOF STRIP ═══════════════════════════════ -->
+  <section class="proof-strip" id="social-proof">
+    <div class="proof-container">
+      <div class="proof-item">
+        <div class="proof-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="proof-text">
+          <strong>Bagian dari KS Global</strong>
+          <span>Korporasi Jepang sejak 2008</span>
+        </div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <div class="proof-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="proof-text">
+          <strong>960+ Alumni Dikirim</strong>
+          <span>Mitra SO Harapan Putera Bandung · 2025</span>
+        </div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <div class="proof-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="proof-text">
+          <strong>250 Perusahaan Mitra</strong>
+          <span>Berbagai prefecture di Jepang</span>
+        </div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <div class="proof-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="proof-text">
+          <strong>Native Teacher Bersertifikat</strong>
+          <span>Instruktur langsung dari Jepang</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROFILE ═══════════════════════════════ -->
+  <section class="profile" id="profile">
+    <div class="section-container">
+      <div class="profile-grid">
+        <div class="profile-visual">
+          <div class="profile-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80"
+              alt="Tokyo Bay Academy"
+              class="profile-img"
+            />
+            <div class="profile-badge">
+              <img src="assets/images/logo.png" alt="Logo" />
+              <span>Est. 2026 — Malang</span>
+            </div>
+          </div>
+          <div class="profile-tag-row">
+            
+          </div>
+        </div>
+        <div class="profile-copy">
+          <p class="section-label">Tentang Kami</p>
+          <h2 class="section-title">Jembatan Indonesia<br />& Jepang</h2>
+          <p class="profile-lead">
+            Tokyo Bay Malang adalah langkah inovasi untuk menghadirkan layanan satu pintu bagi mereka yang menginginkan peluang studi dan karir di Jepang.
+          </p>
+          <p class="profile-body">
+            Kami merupakan cabang dan mitra pendidikan dari <strong>Tokyo Bay Academy Jepang</strong> yang berkantor pusat di Shinjuku-Tokyo, dengan overseas branch di Myanmar dan Vietnam. Di 2026 ini, kami hadir di Indonesia tepatnya di Kabupaten Malang, Jawa Timur.
+          </p>
+          <p class="profile-body">
+            Tokyo Bay adalah bagian dari <strong>KS Global (KSG)</strong> — sebuah korporasi Jepang yang sudah menangani kebutuhan tenaga kerja asing untuk Jepang sejak tahun 2008, dengan akses ke 250 perusahaan di berbagai prefecture dan berbagai bidang pekerjaan.
+          </p>
+          <p class="profile-body">
+            Dengan metode pembelajaran yang terukur, adaptif, dan relevan — langsung oleh <strong>native teacher bersertifikat dari Jepang</strong> — kami meyakini setiap peserta didik akan memperoleh pembelajaran yang relevan dengan kebutuhan di negara Jepang.
+          </p>
+          <div class="profile-values">
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span>Terukur & Adaptif</span>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span>Standar Industri Jepang</span>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <span>Visa Resmi & Terpercaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ═══════════════════════════════ COURSES ═══════════════════════════════ -->
+<section class="courses" id="courses">
+  <div class="section-container">
+    <div class="section-header center">
+      <p class="section-label">Program Unggulan</p>
+      <h2 class="section-title">Pilih Jalur<br />Belajarmu</h2>
+      <p class="section-desc">Empat program dirancang untuk memenuhi kebutuhan studi, karir, dan pengajaran bahasa Jepang secara profesional.</p>
+    </div>
+    <div class="courses-grid">
+      <!-- N5 -->
+      <div class="course-card" data-level="Pemula">
+        <div class="course-header n5">
+          <div class="course-level-badge">JLPT N5</div>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Kursus N5</h3>
+          <p class="course-tagline">Fondasi Bahasa Jepang</p>
+          <p class="course-desc">Kuasai hiragana, katakana, kanji dasar, dan percakapan sehari-hari. Titik awal yang sempurna untuk perjalananmu ke Jepang.</p>
+          <ul class="course-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Hiragana & Katakana</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100 Kanji Dasar</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Percakapan Harian</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Tata Bahasa Dasar</li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- N4 -->
+      <div class="course-card" data-level="Dasar">
+        <div class="course-header n4">
+          <div class="course-level-badge">JLPT N4</div>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Kursus N4</h3>
+          <p class="course-tagline">Bahasa Jepang Fungsional</p>
+          <p class="course-desc">Tingkatkan kemampuan membaca, menulis, dan mendengar untuk memenuhi standar komunikasi kerja dasar di Jepang.</p>
+          <ul class="course-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 300 Kanji & Kosakata</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Tata Bahasa Menengah</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Simulasi Ujian JLPT</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Percakapan Kerja</li>
+          </ul>
+          
+        </div>
+      </div>
+
+      
+      <div class="course-card" data-level="Menengah">
+        <div class="course-header n3">
+          <div class="course-level-badge">JLPT N3</div>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Kursus N3</h3>
+          <p class="course-tagline">Bahasa Jepang Profesional</p>
+          <p class="course-desc">Level yang paling dibutuhkan oleh perusahaan Jepang. Kuasai komunikasi formal, dokumen kerja, dan nuansa budaya kerja Jepang.</p>
+          <ul class="course-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 650 Kanji & Kosakata</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Bahasa Formal & Bisnis</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Budaya Kerja Jepang</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Persiapan Karir</li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- Program SMK -->
+      <div class="course-card smk-card" data-level="Pengajar">
+        <div class="course-header smk">
+          <div class="course-level-badge">Program Khusus</div>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Kursus Pengajaran ke SMK</h3>
+          <p class="course-tagline">Untuk Lembaga Pendidikan</p>
+          <p class="course-desc">Program kolaborasi khusus untuk sekolah dan pengajar SMK. Integrasikan kurikulum bahasa Jepang yang relevan dengan kebutuhan industri nyata.</p>
+          <ul class="course-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Kurikulum Terstruktur</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Materi Native Teacher</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Sertifikasi Pengajar</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Kolaborasi Institusi</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════ GALLERY ═══════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="section-container">
+      <div class="section-header center">
+        <p class="section-label">Aktivitas & Suasana</p>
+        <h2 class="section-title">Galeri</h2>
+        <p class="section-desc">Sepintas kehidupan belajar dan komunitas Tokyo Bay Malang Academy.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80" alt="Kelas Bahasa Jepang" loading="lazy" />
+          <div class="gallery-overlay"><span>Kegiatan Belajar</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Belajar Bersama" loading="lazy" />
+          <div class="gallery-overlay"><span>Sesi Bersama Native Teacher</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&q=80" alt="Workshop" loading="lazy" />
+          <div class="gallery-overlay"><span>Workshop & Seminar</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=600&q=80" alt="Budaya Jepang" loading="lazy" />
+          <div class="gallery-overlay"><span>Pengenalan Budaya Jepang</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Team Discussion" loading="lazy" />
+          <div class="gallery-overlay"><span>Diskusi & Kolaborasi</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=600&q=80" alt="Kelas Jepang" loading="lazy" />
+          <div class="gallery-overlay"><span>Sesi Menulis Kanji</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ REACH US ═══════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="section-container">
+    <div class="section-header center">
+      <p class="section-label">Reach Us</p>
+      <h2 class="section-title">Mulai Perjalananmu<br />Hari Ini</h2>
+      <p class="section-desc">Tim kami siap membantu menjawab pertanyaanmu tentang kursus, program karir, dan kesempatan di Jepang.</p>
+    </div>
+
+    <div class="contact-new-grid">
+      <!-- Sisi Kiri: Contact Info dengan Icon Grid -->
+      <div class="contact-info-panel">
+        <h3 class="contact-panel-title">Hubungi Langsung</h3>
+        <p class="contact-panel-desc">Tim kami siap merespon cepat.</p>
+
+        <!-- WhatsApp -->
+        <div class="contact-row" onclick="openWA()">
+          <div class="contact-row-icon wa-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </div>
+          <div class="contact-row-info">
+            <strong>WhatsApp</strong>
+            <span>+62 877-4552-2325</span>
+          </div>
+          <div class="contact-row-arrow">→</div>
+        </div>
+
+        
+        <div class="contact-row" onclick="window.location.href='mailto:education@tokyobay-malang.jp'">
+          <div class="contact-row-icon email-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-row-info">
+            <strong>Email</strong>
+            <span>education@tokyobay-malang.jp</span>
+          </div>
+          <div class="contact-row-arrow">→</div>
+        </div>
+
+        
+               
+        <div class="contact-row" onclick="window.open('https://www.google.com/maps/place/8%C2%B002%2727.4%22S+112%C2%B036%2720.3%22E/@-8.040946,112.605647,18z/data=!4m4!3m3!8m2!3d-8.040946!4d112.605647?entry=ttu', '_blank')">
+          <div class="contact-row-icon maps-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-row-info">
+            <strong>Lokasi</strong>
+            <span>Dusun Karangsono, RT 058/ RW 011, Desa kebonagung, Kec. pakisaji, Kab. malang</span>
+           
+          </div>
+          <div class="contact-row-arrow">→</div>
+        </div>
+        
+        <div class="social-grid">
+          <h4 class="social-title">Ikuti Kami</h4>
+          <div class="social-icons">
+            <a href="https://www.tiktok.com/@tokyobay.mlg.academy?_r=1&_t=ZS-96vHNGsvTFZ" target="_blank" class="social-icon tiktok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+              <span>TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/tokyobaymlg.academy?utm_source=qr&igsh=MWNpczd6NW9rOXlncA==" target="_blank" class="social-icon instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://wa.me/6287745522325" target="_blank" class="social-icon wa-small">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Form Inquiry -->
+      <div class="contact-form-panel">
+        <h3 class="form-title">Kirim Pesan</h3>
+        <p class="form-desc">Isi form di bawah, tim kami akan menghubungi Anda dalam 1×24 jam.</p>
+        
+        <form id="inquiryForm" onsubmit="sendInquiry(event)">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" id="inquiryName" placeholder="Contoh: Ahmad Rizki" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="inquiryEmail" placeholder="email@contoh.com" required />
+            </div>
+            <div class="form-group">
+              <label>Nomor WhatsApp</label>
+              <input type="tel" id="inquiryPhone" placeholder="0812-3456-7890" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Program Minat</label>
+            <select id="inquiryProgram">
+              <option value="">Pilih program...</option>
+              <option value="N5">Kursus N5 (Pemula)</option>
+              <option value="N4">Kursus N4 (Fungsional)</option>
+              <option value="N3">Kursus N3 (Profesional)</option>
+              <option value="SMK">Program SMK </option>
+              <option value="Lainnya">Konsultasi Program</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Pesan / Pertanyaan</label>
+            <textarea id="inquiryMessage" rows="3" placeholder="Tulis pesan atau pertanyaan Anda di sini..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Kirim Pesan
+          </button>
+        </form>
+        <p class="form-note">Dengan mengirim form, Anda menyetujui kebijakan privasi kami.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Tokyo Bay Academy" class="footer-logo" />
+        <p>Membuka jembatan Indonesia dan Jepang.<br />Raih masa depanmu bersama kami.</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@tokyobay.mlg.academy?_r=1&_t=ZS-96vHNGsvTFZ" target="_blank" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/tokyobaymlg.academy?utm_source=qr&igsh=MWNpczd6NW9rOXlncA==" target="_blank" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/6287745522325" target="_blank" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="#profile">Profile</a>
+        <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Reach Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Program</h4>
+        <a href="#courses">Kursus N5</a>
+        <a href="#courses">Kursus N4</a>
+        <a href="#courses">Kursus N3</a>
+        <a href="#courses">Program SMK</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontak Cepat & Alamat</h4>
+        <a href="https://wa.me/6287745522325" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          +62 877-4552-2325
+        </a>
+        <a href="mailto:education@tokyobay-malang.jp">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          education@tokyobay-malang.jp
+        </a>
+        <a href="https://www.google.com/maps/place/8%C2%B002%2727.4%22S+112%C2%B036%2720.3%22E/@-8.040946,112.605647,18z/data=!4m4!3m3!8m2!3d-8.040946!4d112.605647?entry=ttu" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Pakisaji, Kabupaten Malang, Jawa Timur
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tokyo Bay Malang Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ FLOATING WA ═══════════════════════════════ -->
+  <a class="wa-float" href="https://wa.me/6287745522325?text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20program%20kursus%20Tokyo%20Bay%20Malang%20Academy" target="_blank" aria-label="Chat WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
