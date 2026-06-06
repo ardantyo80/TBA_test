@@ -1,8 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   TOKYO BAY MALANG ACADEMY — script.js
-   ═══════════════════════════════════════════════════════════ */
 
-// ── WA CTA ──────────────────────────────────────────────────
 function openWA() {
   const msg = encodeURIComponent(
     'Halo, saya ingin mengetahui lebih lanjut tentang program kursus Tokyo Bay Malang Academy'
@@ -110,7 +106,7 @@ function sendInquiry(event) {
   const program = document.getElementById('inquiryProgram')?.value || '';
   const message = document.getElementById('inquiryMessage')?.value || '';
   
-  // Buat pesan WhatsApp
+  
   const waMessage = encodeURIComponent(
     `*INQUIRY FROM TOKYO BAY MALANG WEBSITE*%0a%0a` +
     `*Nama:* ${name}%0a` +
@@ -130,3 +126,37 @@ function sendInquiry(event) {
   
   alert('Terima kasih! Pesan Anda akan kami balas melalui WhatsApp dalam 1×24 jam.');
 }
+
+
+// ── SPLASH SCREEN ─────────────────────────────────
+window.addEventListener('DOMContentLoaded', function() {
+  const splash = document.getElementById('splashScreen');
+  const body = document.body;
+  
+  
+  const splashShown = sessionStorage.getItem('splashShown');
+  
+  if (splashShown) {
+    
+    if (splash) splash.style.display = 'none';
+    body.classList.remove('splash-active');
+  } else {
+    
+    body.classList.add('splash-active');
+    
+   
+    setTimeout(function() {
+      if (splash) {
+        splash.classList.add('fade-out');
+        body.classList.remove('splash-active');
+        
+        setTimeout(function() {
+          if (splash) splash.style.display = 'none';
+        }, 600);
+      }
+    }, 2000); 
+    
+    
+    sessionStorage.setItem('splashShown', 'true');
+  }
+});
