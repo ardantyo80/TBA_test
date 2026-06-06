@@ -1,7 +1,3 @@
-// =============================================================
-// TOKYO BAY MALANG ACADEMY - FULL FIXED SCRIPT
-// =============================================================
-
 // ── WA CTA ──────────────────────────────────────────────────
 function openWA() {
   const msg = encodeURIComponent(
@@ -181,7 +177,7 @@ const translations = {
   proof1Title: { id: 'Bagian dari KS Global', en: 'Part of KS Global', jp: 'KSグローバルの一部' },
   proof1Desc: { id: 'Korporasi Jepang sejak 2008', en: 'Japanese Corporation since 2008', jp: '2008年から日本の企業' },
   proof2Title: { id: '960+ Alumni Dikirim', en: '960+ Alumni Sent', jp: '960人以上の卒業生' },
-  proof2Desc: { id: 'Mitra SO Harapan Putera Bandung', en: 'Partner of SO Harapan Putera Bandung', jp: 'SOハラパンプテラバンドン提携' },
+  proof2Desc: { id: 'Mitra SO Harapan Putera Bandung', en: 'Partner of SO Harapan Putera Bandung', jp: 'ハラパンプテラバンドン送り出し機関提携' },
   proof3Title: { id: '250 Perusahaan Mitra', en: '250 Partner Companies', jp: '250社の提携企業' },
   proof3Desc: { id: 'Berbagai prefecture di Jepang', en: 'Various prefectures in Japan', jp: '日本の様々な県' },
   proof4Title: { id: 'Native Teacher Bersertifikat', en: 'Certified Native Teacher', jp: '認定ネイティブ講師' },
