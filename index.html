@@ -21,31 +21,37 @@
   </div>
 </div>
 
-  <!-- ===== NAVBAR ======= -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-brand">
-        <img src="assets/images/logo.png" alt="Tokyo Bay Malang Academy" class="nav-logo" />
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#profile" class="nav-link">Profile</a>
-        <a href="#courses" class="nav-link">Courses</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#contact" class="nav-link">Reach Us</a>
-      </nav>
-      <button class="nav-cta" onclick="openWA()">Join Now</button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+ <!-- ===== NAVBAR ======= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-brand">
+      <img src="assets/images/logo.png" alt="Tokyo Bay Malang Academy" class="nav-logo" />
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#profile" class="nav-link" data-i18n="navProfile">Profile</a>
+      <a href="#courses" class="nav-link" data-i18n="navCourses">Courses</a>
+      <a href="#gallery" class="nav-link" data-i18n="navGallery">Gallery</a>
+      <a href="#contact" class="nav-link" data-i18n="navContact">Reach Us</a>
+    </nav>
+    
+    
+    <div class="nav-lang">
+      <button class="lang-btn active" data-lang="id">🇮🇩 ID</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+      <button class="lang-btn" data-lang="jp">🇯🇵 JP</button>
     </div>
-  </header>
-
+    
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
   <!-- ================== HERO =============== -->
   <section class="hero" id="home">
     <div class="hero-bg">
       <img
         src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&q=80"
-        alt="TBA MALANG"
+        alt="TBA MALA"
         class="hero-img"
       />
       <div class="hero-overlay"></div>
@@ -150,24 +156,41 @@
             Dengan metode pembelajaran yang terukur, adaptif, dan relevan langsung oleh <strong>native teacher bersertifikat dari Jepang.</strong> Kami meyakini setiap peserta didik akan memperoleh pembelajaran yang relevan dengan kebutuhan di negara Jepang.
           </p>
           <div class="profile-values">
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-              </div>
-              <span>Terukur & Adaptif</span>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <span>Standar Industri Jepang</span>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              </div>
-              <span>Visa Resmi & Terpercaya</span>
-            </div>
+  <div class="value-item">
+    <div class="value-icon">
+      <!-- Icon Target/Sasaran untuk Terukur & Adaptif -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="12" r="4"/>
+        <line x1="12" y1="2" x2="12" y2="4"/>
+        <line x1="12" y1="20" x2="12" y2="22"/>
+        <line x1="2" y1="12" x2="4" y2="12"/>
+        <line x1="20" y1="12" x2="22" y2="12"/>
+      </svg>
+    </div>
+    <span>Terukur & Adaptif</span>
+  </div>
+  <div class="value-item">
+    <div class="value-icon">
+      <!-- Icon Medali/Prestasi untuk Standar Industri Jepang -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="8" r="6"/>
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+      </svg>
+    </div>
+    <span>Standar Industri Jepang</span>
+  </div>
+  <div class="value-item">
+    <div class="value-icon">
+      <!-- Icon Centang/Shield untuk Visa Resmi & Terpercaya -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+    </div>
+    <span>Visa Resmi & Terpercaya</span>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -413,60 +436,80 @@
     </div>
   </div>
 </section>
+<!-- ================== FOOTER =============== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Kolom 1: Brand -->
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Tokyo Bay Academy" class="footer-logo" />
+      <p>Membuka jembatan Indonesia dan Jepang.<br />Raih masa depanmu bersama kami.</p>
+      <div class="footer-socials">
+        <a href="https://www.tiktok.com/@tokyobay.mlg.academy?_r=1&_t=ZS-96vHNGsvTFZ" target="_blank" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/tokyobaymlg.academy?utm_source=qr&igsh=MWNpczd6NW9rOXlncA==" target="_blank" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/6287745522325" target="_blank" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
 
-  <!-- ================== FOOTER=============== -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <img src="assets/images/logo.png" alt="Tokyo Bay Academy" class="footer-logo" />
-        <p>Membuka jembatan Indonesia dan Jepang.<br />Raih masa depanmu bersama kami.</p>
-        <div class="footer-socials">
-          <a href="https://www.tiktok.com/@tokyobay.mlg.academy?_r=1&_t=ZS-96vHNGsvTFZ" target="_blank" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/tokyobaymlg.academy?utm_source=qr&igsh=MWNpczd6NW9rOXlncA==" target="_blank" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://wa.me/6287745522325" target="_blank" aria-label="WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          </a>
+    <!-- Kolom 2: Navigasi -->
+<div class="footer-links">
+  <h4 data-i18n="footerNav">Navigasi</h4>
+  <a href="#profile" data-i18n="footerProfile">Profile</a>
+  <a href="#courses" data-i18n="footerCourses">Courses</a>
+  <a href="#gallery" data-i18n="footerGallery">Gallery</a>
+  <a href="#contact" data-i18n="footerContact">Reach Us</a>
+</div>
+
+    <!-- Kolom 3: Program -->
+<div class="footer-links">
+  <h4 data-i18n="footerProgram">Program</h4>
+  <a href="#courses" data-i18n="footerProgramN5">Kursus N5</a>
+  <a href="#courses" data-i18n="footerProgramN4">Kursus N4</a>
+  <a href="#courses" data-i18n="footerProgramN3">Kursus N3</a>
+  <a href="#courses" data-i18n="footerProgramSMK">Program SMK</a>
+</div>
+
+    <!-- Kolom 4: Jam Operasional -->
+    <div class="footer-hours-col">
+      <h4>Jam Operasional</h4>
+      <div class="footer-hours">
+        <div class="footer-hours-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="footer-hours-detail">
+          <span>Senin - Jumat : 08.00 - 17.00</span>
+          <span>Sabtu : 09.00 - 12.00</span>
+          <span>Minggu : Tutup</span>
         </div>
       </div>
-      <div class="footer-links">
-        <h4>Navigasi</h4>
-        <a href="#profile">Profile</a>
-        <a href="#courses">Courses</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Reach Us</a>
-      </div>
-      <div class="footer-links">
-        <h4>Program</h4>
-        <a href="#courses">Kursus N5</a>
-        <a href="#courses">Kursus N4</a>
-        <a href="#courses">Kursus N3</a>
-        <a href="#courses">Program SMK</a>
-      </div>
-      <div class="footer-contact">
-        <h4>Kontak Cepat & Alamat</h4>
-        <a href="https://wa.me/6287745522325" target="_blank">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          +62 877-4552-2325
-        </a>
-        <a href="mailto:education@tokyobay-malang.jp">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          education@tokyobay-malang.jp
-        </a>
-        <a href="https://www.google.com/maps/place/8%C2%B002%2727.4%22S+112%C2%B036%2720.3%22E/@-8.040946,112.605647,18z/data=!4m4!3m3!8m2!3d-8.040946!4d112.605647?entry=ttu" target="_blank">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Pakisaji, Kabupaten Malang, Jawa Timur
-        </a>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Tokyo Bay Malang Academy. All rights reserved.</p>
-    </div>
-  </footer>
 
+    <!-- Alamat -->
+    <div class="footer-contact">
+      <h4>Alamat</h4>
+      <a href="mailto:education@tokyobay-malang.jp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        education@tokyobay-malang.jp
+      </a>
+      <a href="https://www.google.com/maps/place/8%C2%B002%2727.4%22S+112%C2%B036%2720.3%22E/@-8.040946,112.605647,18z/data=!4m4!3m3!8m2!3d-8.040946!4d112.605647?entry=ttu" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Pakisaji, Kabupaten Malang, Jawa Timur
+      </a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Tokyo Bay Malang Academy. All rights reserved.</p>
+  </div>
+</footer>
   <!-- ================== FLOATING WA =============== -->
   <a class="wa-float" href="https://wa.me/6287745522325?text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20program%20kursus%20Tokyo%20Bay%20Malang%20Academy" target="_blank" aria-label="Chat WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>

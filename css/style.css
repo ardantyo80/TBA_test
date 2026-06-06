@@ -68,28 +68,73 @@ ul { list-style: none; }
   padding: 0 24px;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
 }
-.nav-brand { display: flex; align-items: center; }
-.nav-logo { height: 48px; width: auto; object-fit: contain; }
+.nav-brand { 
+  display: flex; 
+  align-items: center; 
+  flex-shrink: 0; 
+}
+.nav-logo { 
+  height: 48px; 
+  width: auto; 
+  object-fit: contain; 
+}
+
+/* Nav Links - ini yang mendorong ke kanan */
 .nav-links {
   display: flex;
-  gap: 8px;
-  margin-left: auto;
+  gap: 5px;
+  margin-left: auto; /* Kunci: dorong semua ke kanan */
 }
+
 .nav-link {
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: var(--radius-sm);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--grey-600);
   transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
 }
 .nav-link:hover,
 .nav-link.active {
   color: var(--blue-deep);
   background: var(--grey-100);
 }
+
+/* Tombol Translate - akan mengikuti di sebelah nav links */
+.nav-lang {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px; /* Jarak dari nav links */
+}
+
+.lang-btn {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background: transparent;
+  color: var(--grey-600);
+  border: 1px solid var(--grey-200);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  background: var(--grey-100);
+  color: var(--blue-deep);
+  border-color: var(--blue-light);
+}
+
+.lang-btn.active {
+  background: var(--blue-deep);
+  color: var(--white);
+  border-color: var(--blue-deep);
+}
+
+/* Nav CTA - jika masih ada (opsional) */
 .nav-cta {
   padding: 10px 22px;
   background: var(--blue-deep);
@@ -104,12 +149,14 @@ ul { list-style: none; }
   background: var(--blue-mid);
   transform: translateY(-1px);
 }
+
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   padding: 4px;
-  margin-left: auto;
+  margin-left: 8px;
 }
 .hamburger span {
   display: block;
@@ -123,6 +170,41 @@ ul { list-style: none; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 16px 24px;
+    gap: 8px;
+    border-bottom: 1px solid var(--grey-200);
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+    margin-left: 0;
+  }
+  .nav-link {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+  .nav-lang {
+    margin-left: auto; /* Di mobile, tetap di kanan */
+  }
+  .lang-btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
 /* ═══════════════════════════════ HERO ═══════════════════════════════ */
 .hero {
   position: relative;
@@ -1201,4 +1283,128 @@ course-header {
 /* Sembunyikan scroll selama splash screen aktif */
 body.splash-active {
   overflow: hidden;
+}
+
+.footer-hours {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.footer-hours svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: rgba(255,255,255,0.5);
+}
+
+.hours-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hours-detail strong {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hours-detail span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Jam Operasional di Footer */
+.footer-hours {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-hours-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-hours-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-hours-detail strong {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-hours-detail span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+/* Kolom 4: Jam Operasional */
+.footer-hours-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-hours-col h4 {
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.footer-hours-col .footer-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-hours-col .footer-hours-icon svg {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+}
+
+.footer-hours-col .footer-hours-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-hours-col .footer-hours-detail span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+/* Update grid footer untuk 5 kolom */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
